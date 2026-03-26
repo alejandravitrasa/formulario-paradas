@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0; URL=https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmda5wBBMUS4nuV02NmQEJXVWhox9sVPsT6p49V4pFZUNkFVTzNRVEJUUjdUOU5FMjI0U1lBUlFORC4u" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Manifest -->
+  manifest.json
+
+  <!-- Color de la barra superior (Chrome Android) -->
+  <meta name="theme-color" content="#0066cc">
+
+  <!-- Redirección al formulario -->
+  <meta http-equiv="refresh" content="0; URL=https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=fmda5wBBMUS4nuV02NmQEJXVWhox9sVPsT6p49V4pFZUNkFVTzNRVEJUUjdUOU5FMjI0U1lBUlFORC4u">
+
   <title>Ocupación de Paradas</title>
 </head>
 <body>
   <p>Abriendo formulario...</p>
+
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("/formulario-paradas/service-worker.js");
+    }
+  </script>
 </body>
 </html>
